@@ -1,0 +1,35 @@
+
+class Car {
+    // Properties of the Car class
+    String brand;
+    int year;
+    float kilometers;
+    
+    // Method to display details of the car
+    void displayDetails() {
+        System.out.println("Brand: " + brand);
+        System.out.println("Year: " + year);
+        System.out.println("Kilometers :"+kilometers);
+
+    }
+}
+
+// Main class to execute the program
+public class classobj {
+    public static void main(String[] args) {
+        // Create an object of the Car class
+        Car car1 = new Car();//create object(this wil call constructor)
+        // Set the properties of the car
+        car1.brand = ((String)"Toyota");
+        car1.year = ((int)2022);
+        car1.kilometers=((float)20.3);
+        // Call the method to display details
+        car1.displayDetails();
+        // Create another object of the Car class
+        Car car2 = new Car();
+        car2.brand = "Honda";
+        car2.year = 2021;
+        car2.kilometers=((float)20.3);
+        car2.displayDetails();
+    }
+}
